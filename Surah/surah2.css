@@ -1,0 +1,75 @@
+/* Loader Styles */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #2e7d32;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px; /* half width */
+    margin-top: -30px; /* half height */
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ayah Container Styles */
+#ayah-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Add some spacing between ayahs */
+}
+
+/* Ayah Styles */
+.ayah {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for visibility */
+}
+
+/* Ayah Number Styles */
+.ayah-number {
+    flex: 0 0 10%; /* Fixed width of 10% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Ayah Content Styles */
+.ayah-content {
+    flex: 1; /* Take remaining space */
+    padding-left: 10px; /* Add space between number and content */
+}
+
+/* Arabic Text Styles */
+.ayah-arabic {
+    font-size: 1.2em; /* Larger font for better readability */
+}
+
+/* Bangla Tafsir Styles */
+.ayah-bangla {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555; /* Slightly darker for visibility */
+}
+
+/* Header and Footer Styles */
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+}
+
+footer {
+    margin-top: 20px;
+}

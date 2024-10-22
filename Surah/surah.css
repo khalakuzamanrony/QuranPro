@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    padding-top: 100px; /* To avoid content hiding behind fixed header */
+    padding-bottom: 60px; /* To avoid content hiding behind fixed footer */
+
+    
+}
+
+/* Header Styles */
+
+/* Header Styles */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 50px; /* Center the div with margin auto */
+
+}
+.t2{
+    background-color: #8cda90; /* Green background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the text */
+    width: 50%; /* Set width to 50% of the viewport */
+    text-align: center; /* Center the text inside the div */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.title h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 00px auto;
+    /* padding: 20px; */
+}
+
+/* Ayah Table Styles */
+#ayah-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#ayah-table th, #ayah-table td {
+    border: 1px solid #2e7d32;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#ayah-table th {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+#ayah-table td {
+    background-color: white;
+}
+
+#ayah-table td:nth-child(3) {
+    font-family: 'Scheherazade New', serif; /* Arabic text should use a distinct font */
+    font-size: 2.5rem;
+
+    text-align: end;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}

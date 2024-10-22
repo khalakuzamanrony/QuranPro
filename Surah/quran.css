@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Surah List Container */
+#surah-list {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 48%; /* Two cards per row */
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-content {
+    padding: 15px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Surah Information */
+.card-content h3 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 3px 0;
+}
+
+/* Ayah Table Styles */
+#ayah-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+#ayah-table th, #ayah-table td {
+    border: 2px solid #2e7d32;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#ayah-table th {
+    background-color: #e8f5e9; /* Light greenish background for table headers */
+    color: #2e7d32;
+}
+
+#ayah-table td {
+    background-color: white;
+}
+
+#ayah-table td:nth-child(3) {
+    font-family: 'Scheherazade New', serif; /* Arabic text should use a distinct font */
+    font-size: 1.2rem;
+}
+
+/* Button */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e7d32;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
